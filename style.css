@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Galaxy-2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 90%;
+    max-width: 450px;
+    color: #f7f7f7;
+    text-align: center;
+    padding: 50px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.card img{
+    width: 140px;
+    border-radius: 50%;
+}
+
+.card h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.card p{
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 330px;
+}
+
+.card .link img{
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: background 0.5px;
+}
+
+.card .link img:before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #fc0101;
+    transition: .5s;
+    transform: scale( .9);
+    z-index: -1;
+}
+
+.card .link img:hover:before{
+    transform: scale(1.2);
+    box-sizing: 0 0 15px #fc0101;
+    filter: blur(3px);
+}
+
+.card .link img:hover{
+    color: #fcfc01;
+    box-shadow: 0 0 20px #fcfc01;
+    text-shadow: 0 0 20px #fcfc01;
+}
+
+/* .Message{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    background: #fff;
+    color: #ff01cf;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 30px 0 10px;
+} */
+
+/* .Message:hover{
+    color: #ff01cf;
+    box-shadow: 0 0 20px #ff01cf;
+    text-shadow: 0 0 100px #ff01cf;
+} */
+
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 30em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  align-self: center;
+  font-size: 1rem;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.fourth {
+  border-color: #04b9fb;
+  color: #ffffff;
+  background-image: linear-gradient(45deg, #f10ff1 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+}
+
+.fourth:hover {
+  background-position: 0;
+}
